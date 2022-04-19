@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="app.js"></script>
+</head>
+<body>
+  <div class="app">
+    <h1>Todo List App</h1>
+    <form class="add">
+      <input id="itemToAdd" type="text">
+      <!-- when this (below) is type button it acts independant of the 
+        form and will not automatically send information in the form to the backend. 
+        now that it's type "submit" whenever it is clicked or enter is hit the
+        form is submitted. so it is no longer a click event, it is a submit event. -->
+      <input type="submit" id="addButton" value="Add Item">
+    </form>
+    <div id="list">
+      <ul class="todo"></ul>
+    </div>
+  </div>
+</body>
+</html>
